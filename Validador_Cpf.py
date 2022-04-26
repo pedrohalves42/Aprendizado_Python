@@ -22,18 +22,18 @@ while True:
     reverso = 10
     total = 0
 
-    for i in range(19):
-        if i > 8:
-            i -= 9
-        total += novo_cpf[i] * reverso
+    for index in range(19):
+        if index > 8:
+            index -= 9
+        total += int(novo_cpf[index]) * reverso
         reverso -= 1
         if reverso < 2:
             reverso = 11
             d = 11 - (total % 11)
             if d > 9:
                 d = 0
-                total = 0
-                novo_cpf += str(d)
+            novo_cpf += str(d)
+            total = 0
     if cpf == novo_cpf:
 
         print('Valido')
