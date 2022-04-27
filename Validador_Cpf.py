@@ -32,9 +32,10 @@ while True:
             d = 11 - (total % 11)
             if d > 9:
                 d = 0
-            novo_cpf += str(d)
             total = 0
-    if cpf == novo_cpf:
+            novo_cpf += str(d)
+    sequencia = novo_cpf == str(novo_cpf[0]) * len(cpf)
+    if cpf == novo_cpf and not sequencia:
 
         print('Valido')
     else:
