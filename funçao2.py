@@ -23,7 +23,7 @@ if divide:
 else:
     print('Conta invalida.')
 '''
-
+'''
 
 def dumb():
     return [1, 2, 4, 5, 6, 7]
@@ -31,3 +31,8 @@ def dumb():
 
 var = dumb()
 print(var, type(var))
+'''
+def dumb():
+    return ('Luiz','Otavio')
+var = dumb()
+print(var,type(var))
