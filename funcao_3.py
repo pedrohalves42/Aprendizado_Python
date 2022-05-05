@@ -5,9 +5,11 @@ retorne o valor do primeiro numero somado do aumento do percentual do mesmo
 
 
 def aumento_percecntual(valor, percentual):
-    print(valor + (valor * percentual / 100))
+    return valor + (valor * percentual / 100)
 
 
-aumento_percecntual(50, 10)
-aumento_percecntual(589,25)
-aumento_percecntual(9800,90)
+ap = aumento_percecntual(50, 10)
+ap1 = aumento_percecntual(589, 25)
+ap2 = aumento_percecntual(9800, 90)
+print(ap, ap1, ap2)
+
